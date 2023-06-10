@@ -8,9 +8,22 @@
 </head>
 <body>
     <h1>Hello World</h1>
-    <img src="Images\Funny_Kitten_Small.jpg" alt="Image of Funny Kitten">
+        <p id="pic">
+            <img src="Images\Funny_Kitten_Small.jpg" alt="Image of Funny Kitten" style="height:400px ; width:400px" >
+        </p>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae debitis blanditiis quae ex ipsam, minima, unde nemo odit saepe aut excepturi mollitia magnam incidunt hic deleniti delectus nesciunt fugiat quis!</p>
     <h1>Hello Darkest My Old Friend</h1>
+    <input type="text" name="First_name">
+    <input type="password" name="password">
+    <input type="date" name="dob">
+    <select name="Cats" onchange="changePic(value)">
+        <option selected disabled>Select a Breed</option>
+        <option value="American Shorthair Cat">American Shorthair Cat</option>
+        <option value="American Bobtail">American Bobtail</option>
+        <option value="Balinese">Balinese</option>
+        <option value="Bengal">Bengal</option>
+        <option value="Sphynx">Sphynx</option>
+    </select>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus enim laudantium quas.</p>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus enim laudantium quas.</p>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus enim laudantium quas.</p>
@@ -20,5 +33,28 @@
     <a href="https://www.reddit.com/">Where People Like to Cry</a>
     <h1>My Soul Leaving My Body</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum magni laborum cumque nostrum. Suscipit id dolores excepturi a vero iusto sint, laborum sed cupiditate rem. Nulla odit eius praesentium ut blanditiis rerum?</p>
+    <script>
+        const pic = document.getElementById("pic")
+        function changePic (breed) {
+            console.log(breed);
+            switch(breed) {
+                case "American Shorthair Cat":
+                    pic.innerHTML = '<img src="https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcRhvHl6DZZ93Jk7-eg3FDrunQ86Lz7I0t5APVdnU42ISyKIWBXNnpS2RAEc5-pGmexu0kxPwIdgy3GMtJE" alt="Image of American Shorthair Cat" style="height:400px ; width:400px ; box-shadow:15px 10px #888888" >'
+                    break;
+                case "American Bobtail":
+                    pic.innerHTML = '<img src="https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcS5qGo3JWeKLRcPwoCVQ1NBe5rzZXHijMQaPqtu297wuYYHg3_ArdMR0OpDe7xgQCDX41NFaJcT1ceHPhs" alt="Image of American Shorthair Cat" style="height:400px ; width:400px ; box-shadow:15px 10px #888888" >'
+                    break;
+                case "Balinese":
+                    pic.innerHTML = '<img src="https://www.holistapet.com/wp-content/uploads/2021/06/small-feline-with-nerf-dart.jpeg" alt="Image of American Shorthair Cat" style="height:400px ; width:400px ; box-shadow:15px 10px #888888" >'
+                    break;
+                case "Bengal":
+                    pic.innerHTML = '<img src="https://visitseaquest.com/wp-content/uploads/2022/11/unnamed-4.jpg" alt="Image of American Shorthair Cat" style="height:400px ; width:400px ; box-shadow:15px 10px #888888" >'
+                    break;
+                case "Sphynx":
+                    pic.innerHTML = '<img src="https://trupanion.com/-/media/Trupanion/Images/Breed--Guide--New/Sphynx/sphynx.jpg?rev=de69b463891943999daf4e9e4792261f&hash=D4731998793CB04650315B832256A12C" alt="Image of American Shorthair Cat" style="height:400px ; width:400px ; box-shadow:15px 10px #888888" >'
+                    break;
+            }
+        } 
+    </script>
 </body>
 </html>
