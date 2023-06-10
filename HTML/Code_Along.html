@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cats Bruh</title>
 </head>
 <body>
-    <h1>Hello World</h1>
-        <p id="pic">
-            <img src="Images\Funny_Kitten_Small.jpg" alt="Image of Funny Kitten" style="height:400px ; width:400px" >
-        </p>
+    <h1>Hello Cats</h1>
+    <H4 id="day"></H4>
+    <p id="pic">
+        <img src="Images\Funny_Kitten_Small.jpg" alt="Image of Funny Kitten" style="height:400px ; width:400px" >
+    </p>
+    <input type="text" name="First_name" placeholder="Your Name Here">
+    <input type="email" placeholder="Your Email Now!">
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae debitis blanditiis quae ex ipsam, minima, unde nemo odit saepe aut excepturi mollitia magnam incidunt hic deleniti delectus nesciunt fugiat quis!</p>
     <h1>Hello Darkest My Old Friend</h1>
     <input type="text" name="First_name">
@@ -29,11 +32,51 @@
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus enim laudantium quas.</p>
     <h1>I've Come to Talk You Again</h1>
     <!-- hello this is comment -->
+    <form>
+        <div>
+            <label>Name Here!</label>
+            <input type="text" placeholder="Name!">
+        </div>
+        <div>
+            <label>Email NOW!</label>
+            <input type="email" placeholder="EMAIL DO IT NOW">
+        </div>
+        <div>
+            <input type="checkbox">
+            <label>Don't you want the cat PICS!!!</label>
+        </div>
+        <input type="submit" value="CLICK IT NOW!!!!!!">
+    </form>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quo rerum, ex nam voluptas magnam aliquam deleniti perspiciatis labore omnis nostrum voluptates exercitationem eligendi ipsum doloremque voluptate. Consequuntur aspernatur recusandae accusantium ipsam minus quasi nesciunt, fuga excepturi qui dignissimos quod nostrum pariatur quibusdam eos? Aspernatur cum eos consectetur autem a cumque ut temporibus. Ad animi veritatis dolorum dignissimos tempore numquam id molestias eaque.</p>
     <a href="https://www.reddit.com/">Where People Like to Cry</a>
     <h1>My Soul Leaving My Body</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum magni laborum cumque nostrum. Suscipit id dolores excepturi a vero iusto sint, laborum sed cupiditate rem. Nulla odit eius praesentium ut blanditiis rerum?</p>
     <script>
+        const today = new Date().getDay();
+        const day = document.getElementById("day");
+        switch (today) {
+            case 0:
+                day.innerText = "Sunday";
+                break
+            case 1:
+                day.innerText = "Monday";
+                break
+            case 2:
+                day.innerText = "Tuesday";
+                break
+            case 3:
+                day.innerText = "wednesday";
+                break
+            case 4:
+                day.innerText = "Thursday";
+                break
+            case 5:
+                day.innerText = "Friday";
+                break
+            case 6:
+            day.innerText = "Saturday";
+                break
+        }
         const pic = document.getElementById("pic")
         function changePic (breed) {
             console.log(breed);
@@ -42,7 +85,7 @@
                     pic.innerHTML = '<img src="https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcRhvHl6DZZ93Jk7-eg3FDrunQ86Lz7I0t5APVdnU42ISyKIWBXNnpS2RAEc5-pGmexu0kxPwIdgy3GMtJE" alt="Image of American Shorthair Cat" style="height:400px ; width:400px ; box-shadow:15px 10px #888888" >'
                     break;
                 case "American Bobtail":
-                    pic.innerHTML = '<img src="https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcS5qGo3JWeKLRcPwoCVQ1NBe5rzZXHijMQaPqtu297wuYYHg3_ArdMR0OpDe7xgQCDX41NFaJcT1ceHPhs" alt="Image of American Shorthair Cat" style="height:400px ; width:400px ; box-shadow:15px 10px #888888" >'
+                    pic.innerHTML = '<img src="https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcS5qGo3JWeKLRcPwoCVQ1NBe5rzZXHijMQaPqtu297wuYYHg3_ArdMR0OpDe7xgQCDX41NFaJcT1ceHPhs" alt="Image of American Shorthair Cat" style="height:800px ; width:800px ; box-shadow:15px 10px #888888" >'
                     break;
                 case "Balinese":
                     pic.innerHTML = '<img src="https://www.holistapet.com/wp-content/uploads/2021/06/small-feline-with-nerf-dart.jpeg" alt="Image of American Shorthair Cat" style="height:400px ; width:400px ; box-shadow:15px 10px #888888" >'
@@ -54,7 +97,8 @@
                     pic.innerHTML = '<img src="https://trupanion.com/-/media/Trupanion/Images/Breed--Guide--New/Sphynx/sphynx.jpg?rev=de69b463891943999daf4e9e4792261f&hash=D4731998793CB04650315B832256A12C" alt="Image of American Shorthair Cat" style="height:400px ; width:400px ; box-shadow:15px 10px #888888" >'
                     break;
             }
-        } 
+        }
+        
     </script>
 </body>
 </html>
