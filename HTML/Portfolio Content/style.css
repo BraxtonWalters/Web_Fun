@@ -1,0 +1,31 @@
+.profileImage {
+    height: 125px;
+    width: 125px;
+}
+
+table {
+    border-collapse: collapse;
+    border-style: hidden;
+}
+
+table td, th {
+    border: 2px solid black;
+    padding: 7px;
+}
+
+.textfield {
+    width: 100px;
+}
+
+.contactInfo {
+    padding-bottom: 10px;
+}
+
+.messagefield {
+    display: flex;
+    align-items: top;
+}
+
+.submitButton {
+    margin: 10px;
+}
