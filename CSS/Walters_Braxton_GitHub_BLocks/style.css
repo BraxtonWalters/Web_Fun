@@ -1,0 +1,50 @@
+body {
+    background-color: #f3f3ff;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.row img {
+    height: 200px;
+    margin: 20px;
+}
+
+#row-1 {
+    background-color: #70959e;
+}
+
+#row-2 {
+    background-color: #ac5c51;
+    justify-content: space-evenly;
+}
+
+#row-3 {
+    background-color: #ffffff;
+}
+
+h1 {
+    font-size: 56px;
+    font-weight: bold;
+    color: #3f486a;
+    margin: 0 auto;
+}
+
+p {
+    color: #92927e;
+    font-size: 20px;
+    margin: 0 auto;
+}
+
+a {
+    color: rgb(118, 232, 232);
+}
