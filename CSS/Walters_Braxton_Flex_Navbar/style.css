@@ -1,0 +1,21 @@
+
+
+
+.nav {
+    display: flex;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-links > li {
+    margin: 10px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    align-items: end;
+    
+}
