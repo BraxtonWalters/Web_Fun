@@ -1,0 +1,110 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid red; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    padding: 0 150px;
+    gap: 20px;
+}
+
+.leftCol {
+    flex: 2;
+}
+
+.rightCol {
+    flex: 1;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.flex {
+    display: flex;
+
+}
+
+.title {
+    color: white;
+    font-size: 40px;
+    padding-left: 130px;
+}
+
+.headLink {
+    text-decoration: none;
+    color: rgb(198, 198, 198);
+    font-size: 14pt;
+    padding: 0 0 0 40px;
+}
+
+.navList {
+    align-items: center;
+}
+
+.navList > li {
+    list-style: none;
+}
+
+
+.topNav {
+    background-color: #000000;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.navR {
+    justify-content: end;
+    padding-right: 170px;
+    align-items: center;
+}
+
+.signOut{
+    background-color: #17a2b8;
+    font-size: 20px;
+    height: 35px;
+    padding: 0 10px;
+    color: white;
+    font-weight: 600;
+}
+
+.headLink2 {
+    font-weight: bolder;
+    color: white;
+    font-size: 14pt;
+    padding: 0 0 0 40px;
+    text-decoration: none;
+}
+
+.topConL {
+    position: relative;
+}
+
+.upTopConL {
+    background-color: #17a2b8;
+    height: 100px;
+}
+
+.lowTopConL {
+    border: 4px solid lightgray;
+    border-top: none;
+    padding-top: 50px;
+}
+
+.userImg {
+    height: 100px;
+    position: absolute;
+    top: 45px;
+    left: 35px;
+}
+
+.username {
+    padding-left: 30px;
+    font-size: 46px;
+    font-weight: 500;
+}
