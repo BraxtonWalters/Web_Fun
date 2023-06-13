@@ -30,6 +30,10 @@
 
 }
 
+.ali {
+    align-items: center;
+}
+
 .title {
     color: white;
     font-size: 40px;
@@ -88,6 +92,7 @@
 .upTopConL {
     background-color: #17a2b8;
     height: 100px;
+    border-radius: 3px;
 }
 
 .lowTopConL {
@@ -105,10 +110,40 @@
 
 .map-marker {
     height: 20px;
+    padding-left: 30px;
+}
+
+.city {
+    display: inline;
+    font-size: 30px;
+    padding-left: 10px;
+    font-weight: 400;
+}
+
+.traits {
+    padding-left: 30px;
+    padding-top: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.edit {
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.edit > a {
+    color: #2b78e4;
+    font-weight: 900;
 }
 
 .gear {
     height: 20px;
+    padding-right: 10px;
 }
 
 .username {
@@ -117,3 +152,108 @@
     font-weight: 500;
 }
 
+.eduCon {
+    background-color: #333333;
+    padding: 15px;
+    border-radius: 3px;
+}
+
+.edu {
+    color: rgb(220, 220, 220);
+    margin-left: 20px;
+}
+
+.listCon {
+    border: 4px solid lightgray;
+    border-top: none;
+    padding: 20px 30px;
+}
+
+.edTitle {
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.date {
+    font-size: 22px;
+    margin-top: 5px;
+    color: rgb(123, 123, 123);
+}
+
+.skills {
+    font-size: 22px;
+    margin-top: 5px;
+}
+
+.conReq {
+    background-color: #333333;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+}
+
+.numRequest {
+    background-color: rgb(220, 220, 220);
+    border-radius: 100%;
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+
+}
+
+.numRequest > p {
+    font-size: 26px;
+}
+
+.titleR {
+    color: rgb(220, 220, 220);
+    font-size: 22px;
+}
+
+.request {
+    border: 4px solid lightgray;
+    border-top: none;
+}
+
+.connection1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.userCRImg {
+    border-radius: 50%;
+    height: 50px;
+}
+
+.fa-circle-check {
+    font-size: 40px;
+    color: rgb(184, 184, 184);
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.fa-circle-xmark {
+    font-size: 40px;
+    color: rgb(184, 184, 184);
+    margin-left: 5px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.connection2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.userCR1 {
+    font-size: 30px;
+    margin-left: 15px;
+}
