@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid red; */
+}
+
+.profileImg {
+    height: 125px;
+    position: absolute;
+    left: 35px;
+    top: 60px;
+}
+
+.topContainer {
+    background-color: #17a2b8;
+    height: 125px;
+}
+
+.bottomContainer {
+    border: 4px solid lightgray;
+    border-top: none;
+    padding-top: 55px;
+    padding-left: 30px;
+}
+
+.container {
+    position: relative;
+    width: 800px;
+    margin: 300px auto;
+
+}
+
+.mapMarker {
+    height: 20px;
+}
+
+.cog {
+    height: 25px;
+}
+
+h1 {
+    font-size: 46px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+}
+
+h2 {
+    display: inline;
+    margin-left: 15px;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.bottom2 {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.parContainer {
+    padding-top: 10px;
+}
+
+p {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.edit {
+    padding-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+
+.edit > a {
+    margin-left: 10px;
+    color: #2b78e4;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
