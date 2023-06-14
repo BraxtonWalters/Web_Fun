@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Button Clicker</title>
+</head>
+<body>
+    <div class="header flex ali marg ">
+        <h1 class="title">Dojonary</h1>
+        <input class="search" type="text" placeholder="search" size="40">
+        <button class="log" onclick="logout(this)">Login</button>
+    </div>
+    <div class="main flex marg">
+        <div class="colL margTop">
+            <div class="colLUp datLine flex ali">
+                <div class="conL aliT">
+                    <h2 class="subTitle flex just">ninja</h2>
+                    <p class="info flex just">noun</p>
+                    <p class="info flex just">Plural:<em>ninjas</em></p>
+                    <button class="likes" onclick="likeCount(this)">13 likes</button>
+                </div>
+                <div class="conR">
+                    <p class="def">A practitioner skilled in the <a href="#">Japanese</a> art of <a href="#">ninjutsu</a></p>
+                </div>
+            </div>
+            <div class="colLBottom datLine flex ali margTop">
+                <div class="conL aliT">
+                    <h2 class="subTitle flex just">ninja</h2>
+                    <p class="info flex just">noun</p>
+                    <p class="info flex just">Plural:<em>ninjas</em></p>
+                    <button class="likes" onclick="likeCount(this)">37 likes</button>
+                </div>
+                <div class="conR">
+                    <p class="def">A <a href="#">programmer</a> who breaks down problems with <a href="#">zen</a>-like focus</p>
+                </div>
+            </div>
+        </div>
+        <div class="colR">
+            <div class="inColR margTop aliT datLine">
+                <h2 class="title2">Dojonary is defined by YOU</h2>
+                <button class="green margTop" onclick="disappear(this)">Add Definition</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
