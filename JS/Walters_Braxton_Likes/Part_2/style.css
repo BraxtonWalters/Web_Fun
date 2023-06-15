@@ -1,3 +1,4 @@
+/* CSS reset and preset classes */
 *{
     margin: 0;
     padding: 0;
@@ -17,11 +18,13 @@
     margin: 0 auto;
 }
 
+/* Sets the width for the page */
 .mainCon {
     max-width: 1200px;
     flex-direction: column;
 }
 
+/* Header styles */
 .upperHead {
     background-color: black;
     padding: 10px 30px;
@@ -42,6 +45,7 @@
     font-weight: 600;
 }
 
+/* Setting the widths for the left and right columns */
 .colR {
     flex: 3;
     margin-left: 30px;
@@ -51,6 +55,7 @@
     flex: 1;
 }
 
+/* Post styles */
 .post {
     padding: 20px 0px;
     border: 5px solid black;
@@ -89,6 +94,7 @@
     font-size: 32px;
 }
 
+/* Usercard styles */
 .usercard {
     border: 5px solid black;
     flex-direction: column;

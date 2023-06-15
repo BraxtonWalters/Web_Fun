@@ -8,7 +8,9 @@
     <title>Likes Part 2</title>
 </head>
 <body>
+    <!-- holds all content -->
     <div class="mainCon flex just marg">
+        <!-- Header  -->
         <div class="header">
             <div class="upperHead">
                 <h1 class="title">Network</h1>
@@ -16,47 +18,57 @@
             <div class="lowwerHead flex just">
                 <h2 class="feed">Your Feed</h2>
             </div>
-            <!-- Main Container -->
+            <!-- Main Container of left and right columns -->
         </div>
         <div class="lowwerMain flex just">
+            <!-- start of the left column -->
             <div class="colL">
+                <!-- start of the usercard -->
                 <div class="usercard flex">
                     <div class="imgDiv">
                         <img class="userImg" src="./Assets/user-circle.png" alt="user-circle">
                     </div>
+                    <!-- split the usercard in half -->
                     <div class="lowwerCard flex">
                         <a class="avatarLink" href="#">Add an avatar</a>
                         <h2 class="userName">James Doe</h2>
                     </div>
                 </div>
             </div>
+            <!-- start of the right column -->
             <div class="colR">
+                <!-- start of the first post -->
                 <div class="post">
                     <div class="upperPost flex">
                         <h2 class="posterName">Neil M</h2>
-                        <p class="likes">9 like(s)</p>
-                        <button class="likeBtn">Like</button>
+                        <p id="neilLike" class="likes">9 like(s)</p>
+                        <button onclick="likeIncreaser('neilLike')" id="neilBtn" class="likeBtn">Like</button>
                     </div>
+                    <!-- split the post in half -->
                     <div class="lowwerPost">
                         <p class="postContent">I just set up this new discord bot, let me know what you think. <a href="#">link</a></p>
                     </div>
                 </div>
+                <!-- start of the second post -->
                 <div class="post">
                     <div class="upperPost flex">
                         <h2 class="posterName">Nichole K</h2>
-                        <p class="likes">12 like(s)</p>
-                        <button class="likeBtn">Like</button>
+                        <p id="nicholeLike" class="likes">12 like(s)</p>
+                        <button onclick="likeIncreaser('nicholeLike')" id="nicholeBtn" class="likeBtn">Like</button>
+                        <!-- split the post in half -->
                     </div>
                     <div class="lowwerPost">
                         <p class="postContent">Just finished my <a href="#">next comic</a>, check it out.</p>
                     </div>
                 </div>
+                <!-- start of the first post -->
                 <div class="post">
                     <div class="upperPost flex">
                         <h2 class="posterName">Jim R</h2>
-                        <p class="likes">9 like(s)</p>
-                        <button class="likeBtn">Like</button>
+                        <p id="jimLike" class="likes">9 like(s)</p>
+                        <button onclick="likeIncreaser('jimLike')" id="jimBtn" class="likeBtn">Like</button>
                     </div>
+                    <!-- split the post in half -->
                     <div class="lowwerPost">
                         <p class="postContent">I can't stop listening to the <a href="#">new album</a>. Who else is liking it?</p>
                     </div>
