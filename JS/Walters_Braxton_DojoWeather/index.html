@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>DojoWeather</title>
+</head>
+<body>
+    <!-- Header Container -->
+    <header>
+        <!-- Top Header Container -->
+        <div class="background">
+            <div class="navHead marg flex ali maxW">
+                <h1 class="title wText">DojoWeather</h1>
+                <ul class="navLinks wText flex just ali">
+                    <li onclick="loadingAlert(this)">Burbank</li>
+                    <li onclick="loadingAlert(this)">Chicago</li>
+                    <li onclick="loadingAlert(this)">Dallas</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Lower Header Container-->
+        <div class="locationHead marg flex ali">
+            <!-- Left side of the container -->
+            <h2 class="city lText btext">San Jose</h2>
+            <!-- Right side of the container -->
+            <div class="selector flex ali">
+                <p class="btext">Show temperature in</p>
+                <select onchange="tempChanger(value)" name="temperatureUnits">
+                    <option selected value="c">°C</option>
+                    <option value="f">°F</option>
+                </select>
+            </div>
+        </div>
+    </header>
+    <!-- Start of the main container -->
+    <main class="mainCon marg flex ali">
+        <!-- First weather report -->
+        <div class="weekday flex ali">
+            <h2 class="day lText">Today</h2>
+            <img class="weatherImg" src="./assets/some_rain.png" alt="Rain">
+            <p class="bText sText">some rain</p>
+            <div class="highLow flex">
+                <p class="temp high sText">24°</p>
+                <p class="temp low sText">18°</p>
+            </div>
+        </div>
+        <!-- Second weather report -->
+        <div class="weekday flex ali">
+            <h2 class="day lText">Tomorrow</h2>
+            <img class="weatherImg" src="./assets/some_sun.png" alt="Rain">
+            <p class="bText sText">some sun</p>
+            <div class="highLow flex">
+                <p class="temp high sText">27°</p>
+                <p class="temp low sText">19°</p>
+            </div>
+        </div>
+        <!-- Third weather report -->
+        <div class="weekday flex ali">
+            <h2 class="day lText">Friday</h2>
+            <img class="weatherImg" src="./assets/some_clouds.png" alt="Rain">
+            <p class="bText sText">some clouds</p>
+            <div class="highLow flex">
+                <p class="temp high sText">21°</p>
+                <p class="temp low sText">16°</p>
+            </div>
+        </div>
+        <!-- Fourth weather report -->
+        <div class="weekday flex ali">
+            <h2 class="day lText">Saturday</h2>
+            <img class="weatherImg" src="./assets/some_sun.png" alt="Rain">
+            <p class="bText sText">some sun</p>
+            <div class="highLow flex">
+                <p class="temp high sText">26°</p>
+                <p class="temp low sText">21°</p>
+            </div>
+        </div>
+        <!-- Cookie Message Container-->
+        <div class="cookie flex ali" id="cookieContainer">
+            <img src="./assets/cookie.png" alt="Cookie">
+            <div class="cookieTextCon marg flex just">
+                <p class="cookieTitle">Stop! Cookie time</p>
+                <p class="cookieText">We use cookies (sadly not the edible ones) to personalize content and ads, to provide socal media features and to analyse our traffic. <a href="#">Read More...</a></p>
+            </div>
+            <button onclick="cookieDismiss('cookieContainer')" class="CookieBtn">I Accept</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

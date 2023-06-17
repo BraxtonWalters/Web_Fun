@@ -1,0 +1,158 @@
+/* CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+    outline: 1px solid red;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Top Header styles */
+.background {
+    background-color: #9fc5f8;
+}
+
+.navHead {
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.title {
+    font-size: 48px;
+}
+
+.navLinks > li {
+    list-style-type: none;
+    margin-left: 60px;
+    font-size: 30px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+/* Lower Header Styles */
+.locationHead {
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 3px solid black;
+    max-width: 1075px;
+}
+
+#tempUnits {
+    margin-left: 10px;
+}
+
+.selector > p {
+    font-weight: 600;
+}
+
+/* Main Container Styles */
+.mainCon {
+    justify-content: space-between;
+    max-width: 1100px;
+}
+
+.weekday {
+    background-color: #eeeeee;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    width: 256px;
+    flex-direction: column;
+}
+
+.day {
+    margin: 10px 0;
+}
+
+.weatherImg {
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+
+.highLow > p {
+    margin-top: 15px;
+    padding: 10px 40px;
+    font-size: 24px;
+}
+
+.high {
+    color: red;
+    font-weight: 600;
+}
+
+.low {
+    color: blue;
+    font-weight: 600;
+}
+
+/* Cookie Message Container Styles */
+.cookie {
+    padding: 15px;
+    width: 1065px;
+    border: 5px solid black;
+    background-color: #eeeeee;
+    position: fixed;
+    bottom: 1%;
+}
+
+.cookieTextCon {
+    width: 80%;
+    flex-direction: column;
+}
+
+.cookieTitle {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.cookieText {
+    font-weight: 600;
+}
+
+.CookieBtn {
+    font-size: 20px;
+    padding: 0 10px;
+    background-color: #9fc5f8;
+    box-shadow: 3px 3px black;
+    border: 3px solid black;
+    cursor: pointer;
+}
+
+/* Utility Classes */
+
+.flex {
+    display: flex;
+}
+
+.marg {
+    margin: 0 auto;
+}
+
+.just{
+    justify-content: center;
+}
+
+.ali {
+    align-items: center;
+}
+
+.maxW {
+    max-width: 1130px;
+}
+
+.wText {
+    color: rgb(242, 242, 242);
+}
+
+.bText {
+    color: rgb(34, 34, 34);
+}
+
+.lText {
+    font-size: 40px;
+    font-weight: 540;
+}
+
+.sText {
+    font-size: 28px;
+}
