@@ -21,7 +21,7 @@ function ranPizza() {
 
 }
 
-const pizza1 = pizzaOven("deep dish", "traditional", ["mozzarella"], ["pepperoni", "sausage"]);
+const pizza1 = pizzaOven("deep dish", "traditional", "mozzarella", ["pepperoni", "sausage"]);
 const pizza2 = pizzaOven("hand tossed", "marinara", ["mozzarella", "feta"], ["mushrooms", "olives", "onions"]);
 const myPizza2 = pizzaOven("Deep Dish", "Red sauce", "Mozzarella", ["Italian sausage", "pepperoni"]);
 const myPizza1 = pizzaOven("Thin crust", "Red sauce", "Mozzarella", ["Italian sausage", "pepperoni"]);
