@@ -1,0 +1,71 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#calculator {
+    background-color: #222222;
+    flex-direction: column;
+    padding: 30px;
+    border: 6px solid rgba(255, 255, 255, 0.653);
+    box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.483);
+}
+
+#display {
+    font-size: 60px;
+    align-self: flex-end;
+    color: rgba(255, 255, 255, 0.653);
+    height: 70px;
+}
+
+
+.LightGrayBtn {
+    font-size: 60px;
+    border-radius: 50%;
+    width: 75px;
+    background-color: #666666;
+    color: rgba(255, 255, 255, 0.653);
+    border: none;
+    margin-right: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.operator {
+    font-size: 60px;
+    border-radius: 50%;
+    width: 75px;
+    background-color: #ff8c00;
+    color: rgba(255, 255, 255, 0.653);
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.equal {
+    font-size: 60px;
+    width: 100%;
+    border-radius: 40px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+/* Utility Classes */
+.flex {
+    display: flex;
+}
+
+.just {
+    justify-content: center;
+}
+
+.marg {
+    margin: 300px auto;
+}

@@ -14,6 +14,9 @@ function addUser(elemID0, elemID, elemID1) {
     document.getElementById(elemID1).innerText = connectionNum;
     document.getElementById(elemID).innerText = requestNum;
     document.getElementById(elemID0).remove();
+    if (requestNum === 0) {
+        document.getElementById("requestCard").remove();
+    }
 }
 
 function declineUser(elemID1, elemID2) {
@@ -23,4 +26,7 @@ function declineUser(elemID1, elemID2) {
 
     document.getElementById(elemID1).innerText = requestNum;
     document.getElementById(elemID2).remove();
+    if (requestNum === 0) {
+        document.getElementById("requestCard").remove();
+    }
 }
