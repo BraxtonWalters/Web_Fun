@@ -7,35 +7,33 @@ let secNum = null;
 // need to get the display to stop disappearing my numbers! I fucking did it!!! lol 
 function press(element) {
     if (firstNum === null) {
-        calDisplay.innerText = "0";
-        calDisplay.innerText += element;
-        firstNum = parseFloat(calDisplay.innerText);
+        calDisplay.innerText = element;
+        firstNum = calDisplay.innerText;
     } else {
-        calDisplay.innerText = "";
-        calDisplay.innerText += element;
-        secNum = parseFloat(calDisplay.innerText);
+        firstNum += element;
+        calDisplay.innerText = firstNum;
     }
-    console.log(firstNum, secNum);
 }
 
 // figuring out the clear should be easy? haha prob not. easy peazy n/m
 
 function clr() {
     calDisplay.innerText = "0";
-    firstNum = null;
-    oper = null;
-    secNum = null;
 }
 
 // now I'm thinking when you press one of the operator buttons it grabs the number and stores it for later and clears the display... 
 
 function setOP(element) {
-    if (oper === null) {
-        oper = element;
-    }
+    firstNum = calDisplay.innerText;
+    oper = element;
+    calDisplay.innerText = "0";
+    secNum = calDisplay.innerText;
 }
 
 function calculate() {
+    let result;
+    firstNum = parseFloat(firstNum);
+    secNum = parseFloat(secNum);
     switch (oper) {
         case "/":
             result = firstNum / secNum;
